@@ -1,0 +1,930 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "a6171836-87c8-429b-82ea-eae8928256d2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a=[]\n",
+    "for i in [1,2,3]:\n",
+    "    a.append(i+1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "f5ac7e86-f1ae-4e62-b043-eae80e76ea34",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 3, 4]"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "number"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "a43bcfb1-3e54-4146-8f34-1f7c277a2e51",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "number_list = []\n",
+    "number_list.append(1)\n",
+    "number_list.append(2)\n",
+    "number_list.append(3)\n",
+    "number_list.append(4)\n",
+    "number_list.append(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "f5a80caa-ea95-4bbe-8b15-4ff9409e53eb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "number_list=[]\n",
+    "for number in range(1,6):\n",
+    "    number_list.append(number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "5f93a05e-4f5e-4123-b3db-75e0e30773d3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, 4, 5]"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "number_list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "928cd820-19e0-464b-b4bc-82a758cbecb9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, 4, 5]"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "number_list = list(range(1,6))\n",
+    "number_list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "e5cc677f-82ed-429f-93fa-e964c4b6c564",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, 4, 5]"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "number_list = [number for number in range(1,6)]\n",
+    "number_list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "3b17cb8f-b8ff-4daa-b888-e1371295b0b2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[0, 1, 2, 3, 4]"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "number_list = [number-1 for number in range(1,6)]\n",
+    "number_list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "1be4280f-7b69-4ece-ad3a-3259d374d988",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 3, 5]"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "number_list = [number for number in range(1,6) if number%2 ==1]\n",
+    "number_list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "1d16833d-1651-4fcd-bf7d-78846d4955d2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 3, 5]"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "number_list = []\n",
+    "for number in range(1,6):\n",
+    "    if number%2 ==1:\n",
+    "        number_list.append(number)\n",
+    "number_list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "55396d71-97a9-4ba2-810a-b7fcd6d6bfb6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['i', 'love', 'python', 'soooooo', 'much!!!']"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sentence = ['I', 'Love', 'Python', 'Soooooo', 'MUCH!!!']\n",
+    "[word.lower() for word in sentence]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "ed66aa27-03b2-49b3-a541-3e90130246c1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Soooooo', 'MUCH!!!']"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sentence = ['I', 'Love', 'Python', 'Soooooo', 'MUCH!!!']\n",
+    "[word for word in sentence if len(word) > 6]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "a5e31e50-89d4-4b16-98b0-f59c4b58c91d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[(0, 0, 0),\n",
+       " (1, 1, 1),\n",
+       " (2, 4, 8),\n",
+       " (3, 9, 27),\n",
+       " (4, 16, 64),\n",
+       " (5, 25, 125),\n",
+       " (6, 36, 216),\n",
+       " (7, 49, 343),\n",
+       " (8, 64, 512),\n",
+       " (9, 81, 729)]"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "[(x, x**2, x**3) for x in range(10)]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "52ca594f-fb8c-4c38-a1b7-6c5ff31b24d8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 1\n",
+      "1 2\n",
+      "2 1\n",
+      "2 2\n",
+      "3 1\n",
+      "3 2\n"
+     ]
+    }
+   ],
+   "source": [
+    "rows = range(1,4)\n",
+    "cols = range(1,3)\n",
+    "for row in rows:\n",
+    "    for col in cols:\n",
+    "        print(row, col)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "63ebc651-e66f-478f-b78e-dde45bb522f3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 1)\n",
+      "(1, 2)\n",
+      "(2, 1)\n",
+      "(2, 2)\n",
+      "(3, 1)\n",
+      "(3, 2)\n"
+     ]
+    }
+   ],
+   "source": [
+    "rows = range(1,4)\n",
+    "cols = range(1,3)\n",
+    "cells = [(row,col) for row in rows for col in cols]\n",
+    "for cell in cells:\n",
+    "    print(cell)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "614da1e6-7c48-4894-9ddd-5377e48c8cc3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[(1, 0),\n",
+       " (2, 0),\n",
+       " (2, 1),\n",
+       " (3, 0),\n",
+       " (3, 1),\n",
+       " (3, 2),\n",
+       " (4, 0),\n",
+       " (4, 1),\n",
+       " (4, 2),\n",
+       " (4, 3)]"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "[(i,j) for i in range(5) for j in range(i)]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "271785ca-8a19-4bbd-b337-16b2adb901f1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'l': 1, 'e': 2, 't': 2, 'r': 1, 's': 1}\n"
+     ]
+    }
+   ],
+   "source": [
+    "word = 'letters'\n",
+    "letter_counts = {letter : word.count(letter) for letter in word}\n",
+    "print(letter_counts)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "bf1e911b-d7bb-4b1c-ac13-d65053a64bf8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'l': 1, 'e': 2, 'r': 1, 's': 1, 't': 2}\n"
+     ]
+    }
+   ],
+   "source": [
+    "word = 'letters'\n",
+    "letter_counts = {letter : word.count(letter) for letter in set(word)}\n",
+    "print(letter_counts)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "ce814567-2923-4c59-b966-0ff06321f36d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 4}"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a_set = {number for number in range(1,6) if number % 3 ==1}\n",
+    "a_set"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "26f184af-d227-4fb0-81c7-3348f7983f45",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'lovepython'"
+      ]
+     },
+     "execution_count": 30,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def sum(a,b):\n",
+    "    return a+b\n",
+    "a=sum(1,2)\n",
+    "b=sum(1.3, 3.1)\n",
+    "c=sum('love', 'python')\n",
+    "a\n",
+    "b\n",
+    "c"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "16fc052f-56f7-4002-b371-505fcc78f6c5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Monday :drink coffee - eat banana - enjoy tiramisu\n",
+      "Tuesday :drink tea - eat orange - enjoy icecream\n",
+      "Wednesday :drink beer - eat peach - enjoy pie\n"
+     ]
+    }
+   ],
+   "source": [
+    "days = ['Monday', 'Tuesday', 'Wednesday']\n",
+    "fruits = ['banana', 'orange', 'peach']\n",
+    "drinks = ['coffee', 'tea', 'beer']\n",
+    "desserts = ['tiramisu', 'icecream', 'pie', 'pudding']\n",
+    "\n",
+    "for day, fruit, drink, dessert in zip(days, fruits, drinks, desserts):\n",
+    "    print(day, \":drink\", drink, \"- eat\", fruit, \"- enjoy\", dessert)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "959bc1a9-851f-4583-88bb-b98a7399c295",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[('Monday', 'Lundi'), ('Tuesday', 'Mardi'), ('Wednesday', 'Mercredi')]"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "english= 'Monday', 'Tuesday', 'Wednesday'\n",
+    "french= 'Lundi', 'Mardi', 'Mercredi'\n",
+    "\n",
+    "list(zip(english, french))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "86ef8a02-9e3d-465a-b078-4e90b55ef51c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'Monday': 'Lundi', 'Tuesday': 'Mardi', 'Wednesday': 'Mercredi'}"
+      ]
+     },
+     "execution_count": 34,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "english= 'Monday', 'Tuesday', 'Wednesday'\n",
+    "french= 'Lundi', 'Mardi', 'Mercredi'\n",
+    "\n",
+    "dict(zip(english, french))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "e3265fb4-8e13-4767-98a1-fb865a350043",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'wine': 'chardonnay', 'entree': 'chicken', 'dessert': 'cake'}"
+      ]
+     },
+     "execution_count": 36,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def menu(wine, entree, dessert):\n",
+    "    return {'wine': wine, 'entree': entree, 'dessert': dessert}\n",
+    "\n",
+    "menu('chardonnay', 'chicken','cake')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "63303d96-04dc-4bfe-84be-3a9827eeb923",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'wine': 'bordeaux', 'entree': 'beef', 'dessert': 'bagel'}"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def menu(wine, entree, dessert):\n",
+    "    return {'wine': wine, 'entree': entree, 'dessert': dessert}\n",
+    "    \n",
+    "menu(entree='beef', dessert='bagel', wine='bordeaux')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "5f83e289-6f81-4d58-be3f-73153a4cc8ed",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'wine': 'frontenac', 'entree': 'fish', 'dessert': 'flan'}"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def menu(wine, entree, dessert):\n",
+    "    return {'wine': wine, 'entree': entree, 'dessert': dessert}\n",
+    "\n",
+    "menu('frontenac', dessert='flan', entree='fish')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "ab3b2f54-bc06-413b-b1d5-7143ab024e53",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'wine': 'chardonnay', 'entree': 'chicken', 'dessert': 'pudding'}"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def menu(wine, entree, dessert='pudding'):\n",
+    "    return {'wine': wine, 'entree': entree, 'dessert': dessert}\n",
+    "\n",
+    "menu('chardonnay', 'chicken')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "d19a2c1f-3578-4cf6-88df-95907e39f7b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'wine': 'dunkelfelder', 'entree': 'duck', 'dessert': 'doughnut'}"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def menu(wine, entree, dessert='pudding'):\n",
+    "    return {'wine': wine, 'entree': entree, 'dessert': dessert}\n",
+    "    \n",
+    "menu('dunkelfelder', 'duck', 'doughnut')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "4eb1948f-d5e6-4a3c-ae7e-4f6a74e81d55",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def menu(price, wine='chardonnay', entree='chicken', dessert = 'pudding'):\n",
+    "    return{'price': price, 'wine': wine, 'entree': entree, 'dessert': dessert}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "5bd65af2-ff9c-424a-8583-17a92b00ae46",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'price': 100, 'wine': 'chardonnay', 'entree': 'chicken', 'dessert': 'pudding'}"
+      ]
+     },
+     "execution_count": 50,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "menu(100)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "ba16e059-c824-469f-a9d6-3373286a79a3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'price': 100, 'wine': 'chardonnay', 'entree': 'chicken', 'dessert': 'pudding'}"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "menu(price=100)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "3ce30893-759a-4085-830e-835b366b4b2e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'price': 120, 'wine': 'chardonnay', 'entree': 'beef', 'dessert': 'pudding'}"
+      ]
+     },
+     "execution_count": 52,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "menu (price=120, entree='beef')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "58ce342c-0b16-47fc-b2b5-4e5ec0123b8a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'price': 110, 'wine': 'chardonnay', 'entree': 'chicken', 'dessert': 'bagel'}"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "menu(dessert='bagel', price=110)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "a13ab4f2-a351-4353-bebc-ce8463c72d45",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'price': 'eighty',\n",
+       " 'wine': 'saint-pierre',\n",
+       " 'entree': 'fish',\n",
+       " 'dessert': 'pudding'}"
+      ]
+     },
+     "execution_count": 55,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "menu('eighty', 'saint-pierre', 'fish')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "2387b54f-5c0c-4262-b8ee-9ca7bf86e930",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'price': 'hundred',\n",
+       " 'wine': 'saint-pierre',\n",
+       " 'entree': 'chicken',\n",
+       " 'dessert': 'pudding'}"
+      ]
+     },
+     "execution_count": 56,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "menu('hundred', wine='saint-pierre')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "id": "4bf8ace0-cad0-4ab1-b2d4-7b63c90ba1cf",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def echo(anything):\n",
+    "    'echo returns its input argumnet'\n",
+    "    return anything"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "id": "1a4a5163-fdbe-4f5c-a22b-a12a4150e4cb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def print_if_true(thing, check):\n",
+    "    \"\"\"\n",
+    "    Print the first argumnet if a second argumnet is true.\n",
+    "    The operation is:\n",
+    "     1. Check whether the *second* argument is true.\n",
+    "     2. If it is, print the *first* argument.\n",
+    "    \"\"\"\n",
+    "    if check:\n",
+    "        print(thing)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "cb06ddd0-259c-4e32-b010-1001d2fa73bd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Help on function echo in module __main__:\n",
+      "\n",
+      "echo(anything)\n",
+      "    echo returns its input argumnet\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "help(echo)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "faaf2ed5-ba2e-4b05-8384-d2c021a13ea0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Help on function print_if_true in module __main__:\n",
+      "\n",
+      "print_if_true(thing, check)\n",
+      "    Print the first argumnet if a second argumnet is true.\n",
+      "    The operation is:\n",
+      "     1. Check whether the *second* argument is true.\n",
+      "     2. If it is, print the *first* argument.\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "help(print_if_true)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "6c916dea-9999-4557-9ed1-ea62f9b7dac3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "echo returns its input argumnet\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(echo.__doc__)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "5538b873-225e-4372-8f57-07c2db6a68b5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "    Print the first argumnet if a second argumnet is true.\n",
+      "    The operation is:\n",
+      "     1. Check whether the *second* argument is true.\n",
+      "     2. If it is, print the *first* argument.\n",
+      "    \n"
+     ]
+    }
+   ],
+   "source": [
+    "print(print_if_true.__doc__)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "db4ea9dc-40f5-4423-80fb-755adba976cd",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
